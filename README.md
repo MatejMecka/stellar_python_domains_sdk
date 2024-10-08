@@ -12,6 +12,7 @@ pip install stellar-domains-sdk
 
 ```python
 from stellar_domains_sdk import SorobanDomainsSDK, SorobanDomainsSDKParams
+from stellar_domains_sdk.exceptions import Domain404Error
 
 # Initialize the SDK
 params = SorobanDomainsSDKParams(
