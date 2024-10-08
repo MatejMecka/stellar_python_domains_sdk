@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stellar_domains_sdk"
+version = "0.1.0"
+description = "A Python SDK for interacting with Soroban Domains on the Stellar network"
+readme = "README.md"
+authors = [{ name = "Matej Plavevski", email = "matej.plavevski+pypi@gmail.com" }]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["stellar", "blockchain", "domains", "soroban", "sdk"]
+dependencies = [
+    "stellar-sdk>=8.0.0",
+    "safe-pysha3>=1.0.4",
+    "dataclasses; python_version<'3.7'"
+]
+requires-python = ">=3.7"
+
+[project.urls]
+Homepage = "https://github.com/matejmecka/stellar-python-domains-sdk"
+Repository = "https://github.com/matejmecka/stellar-python-domains-sdk.git"
+Documentation = "https://github.com/matejmecka/stellar-python-domains-sdk#readme"
